@@ -1,5 +1,5 @@
 import React from "react"
-import { useCartContext } from "../context/cartContext";
+import { useCartContext } from "../context/CartContext";
 
 interface propsType {
   size: string;

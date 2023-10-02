@@ -1,5 +1,5 @@
 import { FaShoppingBasket } from "react-icons/fa";
-import { useCartContext } from "../context/cartContext";
+import { useCartContext } from "../context/CartContext";
 
 interface propsType {
   img: any;

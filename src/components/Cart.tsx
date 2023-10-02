@@ -1,5 +1,5 @@
 import CartProduct from './CartProduct';
-import { useCartContext } from '../context/cartContext';
+import { useCartContext } from '../context/CartContext';
 import { FaX } from 'react-icons/fa6';
 
 const Cart = ({ setShowCart }: any) => {

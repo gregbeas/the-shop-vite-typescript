@@ -9,7 +9,7 @@ import Hero from "./components/Hero"
 import MobileNav from "./components/MobileNav"
 import Navbar from "./components/Navbar"
 import NewsLetter from "./components/NewsLetter"
-import { CartContextProvider } from "./context/cartContext"
+import { CartContextProvider } from "./context/CartContext"
 import Cart from "./components/Cart"
 
 const App = () => {
