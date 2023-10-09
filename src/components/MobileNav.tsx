@@ -16,7 +16,7 @@ const MobileNav = ({setShowCart}: any) => {
           </div>
           <div className="icon-wrapper relative text-[16px] cursor-pointer hover:scale-105 transition-transform" onClick={() => setShowCart(true)}>
             <FaCartShopping />
-            <CartBadge size="w-[20px] h-[20px]"/>
+            <CartBadge />
           </div>
         </div>
       </div>
