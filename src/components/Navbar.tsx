@@ -23,7 +23,7 @@ const Navbar = ({setShowCart}: any) => {
           </div>
           <div className="icon-wrapper relative text-[25px] cursor-pointer hover:scale-105 transition-transform" onClick={() => setShowCart(true)}>
             <FaCartShopping />
-            <CartBadge size="w-[25px] h-[25px]" />
+            <CartBadge />
           </div>
         </div>
       </div>

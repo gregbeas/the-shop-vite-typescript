@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "img": "imgs/veg-1.jpg",
+    "name": "Tomato",
+    "price": 1
+  },
+  {
+    "id": 2,
+    "img": "imgs/veg-2.jpg",
+    "name": "Fuji Apple",
+    "price": 2
+  },
+  {
+    "id": 3,
+    "img": "imgs/veg-3.jpg",
+    "name": "Pineapple",
+    "price": 4
+  },
+  {
+    "id": 4,
+    "img": "imgs/veg-4.jpg",
+    "name": "Basil",
+    "price": 1
+  },
+  {
+    "id": 5,
+    "img": "imgs/veg-5.jpg",
+    "name": "Carrot",
+    "price": 1
+  }
+]

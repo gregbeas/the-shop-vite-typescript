@@ -1,0 +1,32 @@
+[
+  {
+    "id": 6,
+    "img": "/imgs/bake-1.jpg",
+    "name": "Donut",
+    "price": 2
+  },
+  {
+    "id": 7,
+    "img": "/imgs/bake-2.jpg",
+    "name": "Sourdough",
+    "price": 5
+  },
+  {
+    "id": 8,
+    "img": "/imgs/bake-3.jpg",
+    "name": "Muffin",
+    "price": 1
+  },
+  {
+    "id": 9,
+    "img": "/imgs/bake-4.jpg",
+    "name": "French Baguette",
+    "price": 4
+  },
+  {
+    "id": 10,
+    "img": "/imgs/bake-5.jpg",
+    "name": "Artisan Loaf",
+    "price": 7
+  }
+]

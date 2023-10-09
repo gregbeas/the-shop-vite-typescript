@@ -13,7 +13,7 @@ const Hero = () => {
             <p className="text-base hidden sm:block sm:text-xl bg-accent w-fit p-2 text-white rounded-md" >100% Farm Fresh</p>
             <h2 className="text-2xl sm:text-4xl md:text-4xl xl:text-6xl font-bold text-white">Healthy Produce to Fit Your Lifestyle</h2>
             <p className="text-white  text-base md:text-xl pt-4 sm:pt-8">Starting At</p>
-            <div className="font-medium text-accentLight text-2xl sm:text-4xl pb-4 sm:pb-8">$3.99</div>
+            <div className="font-medium text-accentLight text-2xl sm:text-4xl pb-4 sm:pb-8">$1.00</div>
             <a href="#produce">
               <div className="bg-accentDark hover:bg-accentLight text-white rounded-full w-fit flex items-center gap-4 px-4 py-4 text-[14px] sm:px-6 sm:py-3 cursor-pointer">
                 Shop Now <FaArrowRight />
@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="p-2 bg-black/70 rounded-md mb-2">
               <h2 className="text-xl sm:text-2xl font-bold text-white" >Meat &<br></br>Seafood </h2>
               <p className="text-white text-xl pt-4" >Starting At</p>
-              <div className="font-medium text-accentLight text-2xl sm-text-4xl" >$9.99</div>
+              <div className="font-medium text-accentLight text-2xl sm-text-4xl" >$9.00</div>
             </div>
             <div className="bg-accentDark hover:bg-accentLight text-white rounded-full w-fit flex items-center gap-4 py-2 px-4 text-[14px] cursor-pointer">
               Shop Now <FaArrowRight />
@@ -40,7 +40,7 @@ const Hero = () => {
             <div className="p-2 bg-black/70 rounded-md mb-2">
               <h2 className="text-2xl sm:text-3xl font-bold text-white" >Dry Goods</h2>
               <p className="text-white text-xl pt-4" >Starting At</p>
-              <div className="font-medium text-accentLight text-2xl sm-text-4xl" >$2.79</div>
+              <div className="font-medium text-accentLight text-2xl sm-text-4xl" >$2.00</div>
             </div>
             <div className="bg-accentDark hover:bg-accentLight text-white rounded-full w-fit flex items-center gap-4 py-2 px-4 text-[14px] cursor-pointer">
               Shop Now <FaArrowRight />

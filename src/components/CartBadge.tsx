@@ -1,16 +1,12 @@
-import React from "react"
-import { useCartContext } from "../context/CartContext";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
-interface propsType {
-  size: string;
-}
 
-const CartBadge: React.FC<propsType> = ({size}) => {
-  const {product} = useCartContext();
+const CartBadge = () => {
+  const {cartQuantity} = useShoppingCart();
 
   return (
-    <div className={`absolute bg-red-600 text-white text-[14px] ${size} -right-3 -top-1 rounded-full grid place-items-center`}>
-      {product.length}
+    <div className={`absolute bg-red-600 text-white text-[14px] w-5 h-5 -right-3 -top-1 rounded-full flex justify-center content-center`}>
+      {cartQuantity}
     </div>
   )
 }

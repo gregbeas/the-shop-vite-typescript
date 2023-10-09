@@ -1,9 +1,13 @@
 import CartProduct from './CartProduct';
-import { useCartContext } from '../context/CartContext';
 import { FaX } from 'react-icons/fa6';
+import { useShoppingCart } from '../context/ShoppingCartContext';
+import bakeItems from "../data/bake-items.json"
+import produceItems from "../data/produce-items.json"
 
-const Cart = ({ setShowCart }: any) => {
-  const { product } = useCartContext();
+const Cart = ({setShowCart}: any) => {
+  const { cartItems } = useShoppingCart();
+
+  const storeItems = [...bakeItems, ...produceItems];
 
   return (
     <div
@@ -19,14 +23,19 @@ const Cart = ({ setShowCart }: any) => {
           Your Cart
         </h3>
         <div className="mt-6">
-          {product?.map((el: any) => (
+          {cartItems.map((item) => (
             <CartProduct
-              key={el.name}
-              img={el.img}
-              name={el.name}
-              price={el.price}
+              key={item.id}
+              {...item}
             />
           ))}
+        </div>
+        <div className='flex justify-end font-bold text-xl'>
+          Total: ${cartItems.reduce((total, cartItem) => {
+            const item = storeItems.find(i => i.id === cartItem.id)
+            return total + (item?.price || 0) * cartItem.quantity
+          }, 0
+          )}
         </div>
         <button className="bg-accent text-white text-center w-full rounded-3xl py-2 hover:bg-accentDark mb-4 mt-4">
           View Cart

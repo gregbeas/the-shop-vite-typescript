@@ -1,44 +1,7 @@
 import feature2 from "../assets/feature-2.jpg"
 import ProductCard from "./ProductCard"
-import bake1 from "../assets/bake-1.jpg"
-import bake2 from "../assets/bake-2.jpg"
-import bake3 from "../assets/bake-3.jpg"
-import bake4 from "../assets/bake-4.jpg"
-import bake5 from "../assets/bake-5.jpg"
+import bakeItems from "../data/bake-items.json"
 
-
-const bakeData = [
-  {
-    id: 0,
-    img: bake1,
-    name: 'Donut',
-    price: '$1.59',
-  },
-  {
-    id: 1,
-    img: bake2,
-    name: 'Sourdough',
-    price: '$4.99',
-  },
-  {
-    id: 2,
-    img: bake3,
-    name: 'Muffin',
-    price: '$1.09',
-  },
-  {
-    id: 3,
-    img: bake4,
-    name: 'French Baguette',
-    price: '$3.49',
-  },
-  {
-    id: 4,
-    img: bake5,
-    name: 'Artisan Loaf',
-    price: '$7.69',
-  },
-]
 
 const FeatureBakery = () => {
   return (
@@ -58,7 +21,7 @@ const FeatureBakery = () => {
         <div>
           <img className="w-full h-full object-cover" src={feature2} alt="vegetbles" />
         </div>
-        {bakeData.map((bake) => <ProductCard key={bake.id} img={bake.img} name={bake.name} price={bake.price} />)}
+        {bakeItems.map((bake) => <ProductCard id={bake.id} key={bake.id} img={bake.img} name={bake.name} price={bake.price} />)}
       </div>
     </section>
   )

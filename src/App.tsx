@@ -9,15 +9,15 @@ import Hero from "./components/Hero"
 import MobileNav from "./components/MobileNav"
 import Navbar from "./components/Navbar"
 import NewsLetter from "./components/NewsLetter"
-import { CartContextProvider } from "./context/CartContext"
 import Cart from "./components/Cart"
+import { ShoppingCartProvider } from "./context/ShoppingCartContext"
 
 const App = () => {
 
   const [showCart, setShowCart] = useState(false);
 
   return (
-    <CartContextProvider>
+    <ShoppingCartProvider>
       <>
         <header>
           <Navbar setShowCart={setShowCart}/>
@@ -35,7 +35,7 @@ const App = () => {
           {showCart && <Cart showCart={showCart} setShowCart={setShowCart}/> }
         </main>
       </>
-    </CartContextProvider>
+    </ShoppingCartProvider>
   )
 }
 
